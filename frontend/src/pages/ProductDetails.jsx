@@ -25,7 +25,7 @@ import { useCart } from '../context/CartContext.jsx';
 
 function ProductDetails() {
     const { id } = useParams();
-    const BASEURL = import.meta.env.VITE_DJANGO_BASE_URL || 'http://127.0.0.1:8000';
+    const BASEURL = import.meta.env.VITE_DJANGO_BASE_URL || 'https://e-commerce-full-stack-website-e94i.onrender.com';
     const [product, setProduct] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);

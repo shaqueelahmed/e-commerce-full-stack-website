@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 function CartPages() {
     const {cartItems, removeFromCart, updateQuantity} = useCart();
-    const BASEURL = import.meta.env.VITE_DJANGO_BASE_URL || 'http://127.0.0.1:8000';
+    const BASEURL = import.meta.env.VITE_DJANGO_BASE_URL || 'https://e-commerce-full-stack-website-e94i.onrender.com';
     console.log("cartItems:", cartItems);
 
     const total = cartItems.reduce((sum, item) => {

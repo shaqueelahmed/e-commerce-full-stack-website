@@ -4,7 +4,7 @@ import {authFetch} from '../utils/auth.js';
 import {useNavigate} from 'react-router-dom';
 
 function CheckoutPage() {
-    const BASEURL = import.meta.env.VITE_DJANGO_BASE_URL || 'http://localhost:8000';
+    const BASEURL = import.meta.env.VITE_DJANGO_BASE_URL || 'https://e-commerce-full-stack-website-e94i.onrender.com';
     const navigate = useNavigate();
     const {clearCart} = useCart();
 

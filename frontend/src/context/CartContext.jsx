@@ -3,7 +3,7 @@ import { authFetch, getAccessToken } from '../utils/auth';
 
 const CartContext = createContext();
 
-const BASEURL = import.meta.env.VITE_DJANGO_BASE_URL || 'http://127.0.0.1:8000';
+const BASEURL = import.meta.env.VITE_DJANGO_BASE_URL || 'https://e-commerce-full-stack-website-e94i.onrender.com';
 
 function normalizeCartItem(item) {
     return {
