@@ -25,5 +25,4 @@ urlpatterns = [
     path("api/", include("store.urls")),
 ]
 
-# This keeps product images reachable in production when MEDIA_ROOT is local.
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
