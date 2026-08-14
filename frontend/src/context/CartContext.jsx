@@ -11,7 +11,7 @@ function normalizeCartItem(item) {
         product: item.product,
         name: item.product_name,
         price: Number(item.product_price ?? 0),
-        image: item.product_image ? `${BASEURL}${item.product_image}` : '',
+        image: item.product_image ? (item.product_image.startsWith('http') ? item.product_image : `${BASEURL}${item.product_image}`) : '',
         quantity: item.quantity,
         product_name: item.product_name,
         product_price: Number(item.product_price ?? 0),

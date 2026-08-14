@@ -23,7 +23,7 @@ function CartPages() {
                             <div className="w-20 h-20 flex-shrink-0 mr-4">
                                 {(item.product_image || item.image) && (
                                     <img
-                                        src={item.product_image ? `${BASEURL}${item.product_image}` : item.image}
+                                        src={item.product_image ? (item.product_image.startsWith('http') ? item.product_image : `${BASEURL}${item.product_image}`) : item.image}
                                         alt={item.product_name || item.name}
                                         className="w-full h-full object-cover rounded"
                                     />
